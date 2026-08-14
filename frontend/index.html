@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StandupBot</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">StandupBot</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" id="login-button">Sign In</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="hero">
+            <h2>Async standups for student teams.</h2>
+            <p>No meetings. 90 seconds a day.</p>
+            <button id="main-login-button" class="btn btn-primary">Sign in with Google</button>
+        </div>
+    </main>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Welcome to StandupBot</h2>
+            <p>Get started by signing in with your Google account.</p>
+            <a href="/auth/google" class="btn btn-google">
+                <img src="https://developers.google.com/identity/images/g-logo.png" alt="Google logo">
+                Continue with Google
+            </a>
+            <div class="separator">or</div>
+            <a href="#" id="invite-link-button" class="btn btn-secondary">I have an invite link</a>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
